@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link href="./styles/simpleCalc.css" rel="stylesheet">
+    <script src="./scripts/simpleCalc.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <p>SIMPLE</p><p>CALCULATOR</p>
+        <div class="calculator-grid">
+            <div class="output span-four">
+                <div id="display"></div>
+                <div id="result"></div>
+            </div>
+            <button onclick="clr()">AC</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="entry('%')">%</button>
+            <button onclick="entry('/')">÷</button>
+            <button onclick="entry(7)">7</button>
+            <button onclick="entry(8)">8</button>
+            <button onclick="entry(9)">9</button>
+            <button onclick="entry('*')">×</button>
+            <button onclick="entry(4)">4</button>
+            <button onclick="entry(5)">5</button>
+            <button onclick="entry(6)">6</button>
+            <button onclick="entry('+')">+</button>
+            <button onclick="entry(1)">1</button>
+            <button onclick="entry(2)">2</button>
+            <button onclick="entry(3)">3</button>
+            <button onclick="entry('-')">-</button>
+            <button onclick="entry('.')">.</button>
+            <button onclick="entry(0)">0</button>
+            <button onclick="cal()" id="equalBtn" class="span-two">=</button>
+        </div>       
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body{
+    font-family:cursive;
+    font-weight: normal;
+    outline: none;
+    padding: 0;
+    margin: 0;    
+}
+#container{
+    background-image: url('https://i.ibb.co/16rg61b/pink-Stars.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 50%;
+    border: 1px solid gray;
+    height: 850px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#container p{
+    display: flex;
+    color:white;    
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 2px 2px 2px dimgrey, -2px -2px 2px dimgrey;
+    text-align: center;
+    margin-top:.5%;
+    margin-bottom:.5%;
+}
+.calculator-grid{
+    border: 2px solid white;
+    min-width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient( white, aliceBlue, lavender, hotPink);
+    box-shadow: 6px 6px 13px white, 6px 6px 13px rgba(0, 0, 0, .16);
+    border-radius: 28px;
+    padding: 2%;
+    display: grid;    
+    grid-template-columns: repeat(4,25%);
+}
+.span-two{
+    grid-column: span 2;    
+}
+.span-four{
+    grid-column: span 4;
+}
+.output{
+    height: 100px;
+    box-shadow: inset -6px -6px 13px white, inset 6px 6px 13px rgba(0, 0, 0, .16);
+    background-color: whitesmoke;
+    border-radius: 32px;
+    color: dimgrey;
+    margin: 40px 0px 0px 0px;
+    padding: 20px;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output #result{
+    font-weight: bold;
+}
+.calculator-grid button{
+    padding: 2%;    
+    box-shadow: inset 6px 6px 13px white, 6px 6px 13px rgba(0, 0, 0, .16);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    margin:4%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(250, 107, 131);
+}
+#equalBtn{
+    width: 70%;
+    height: 60px;
+    border-radius: 30px;
+}
+.calculator-grid button:hover{
+    background-color:rgb(250, 100, 125);
+    box-shadow: none;
+    color: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 900px){
+    #container p{
+        font-size:3.5rem;
+    }
+}
+@media screen and (max-width: 800px){
+    #container{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }    
+}
+@media screen and (max-width: 650px){
+    .calculator-grid{
+        width:85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+    #container p{
+        font-size:3rem;
+    }
+}
+@media screen and (max-width: 570px){
+    #container{
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .calculator-grid{
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 370px){
+    #container p{
+        font-size:2rem;
+    }
+}
